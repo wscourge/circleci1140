@@ -5,7 +5,7 @@ class Token < ApplicationRecord
 
   belongs_to :user
 
-  def inactive?
-    used_at.present? || expired_at < Time.current.getutc
-  end
+  # def inactive?
+  #   used_at.present? || expired_at < Time.current.getutc
+  # end
 end

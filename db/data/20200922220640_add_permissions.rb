@@ -8,7 +8,7 @@ class AddPermissions < ActiveRecord::Migration[6.0]
     { slug: 'verified', name: 'Verified' },
     { slug: 'cantwait', name: 'Waiting List' },
     { slug: 'anon', name: 'Anonymous' }
-  ]
+  ].freeze
 
   private_constant :PERMISSIONS
 

@@ -18,7 +18,13 @@ Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 
 Layout/LineLength:
-  Max: 120
+  Enabled: false
+  # Max: 120
+  # IgnoredPatterns:
+  #   - ^\s+([A-Z]|_)+_REGEXP\s=\s+$
+
+RSpec/MultipleExpectations:
+  Enabled: false
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
@@ -178,6 +184,16 @@ Rails/RenderInline:
 
 Rails/RenderPlainText:
   Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: true
+  Exclude:
+    - db/data/*.rb
+
+Rails/FilePath:
+  Enabled: true
+  Exclude:
+    - db/data/*.rb
 
 Rails/ShortI18n:
   Enabled: true
