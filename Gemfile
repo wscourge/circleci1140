@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
+gem 'authix', path: '/home/me/ws/hix/authix'
 gem 'active_flag'
 gem 'activeresource'
 gem 'acts_as_paranoid'
