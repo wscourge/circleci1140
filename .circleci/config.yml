@@ -49,7 +49,7 @@ jobs:
       - configure_bundler
       - run:
           name: Install PostgreSQL Client
-          command: apt install postgresql-client -y
+          command: sudo apt install postgresql-client -y
       - run:
           name: Install bundle
           command: bundle install
